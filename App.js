@@ -6,6 +6,7 @@ export default class App extends React.Component {
   playerRef = undefined
   async componentDidMount() {
     try {
+      console.log('calling loadAsync')
       await this.playerRef.loadAsync(
         {uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'},
         {shouldPlay: true, androidImplementation: 'MediaPlayer'}
